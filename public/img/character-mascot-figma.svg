@@ -1,0 +1,24 @@
+<svg width="68" height="48" viewBox="0 0 68 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Character body -->
+<ellipse cx="34" cy="35" rx="20" ry="8" fill="#C7EFDE"/>
+
+<!-- Character head -->
+<circle cx="34" cy="20" r="15" fill="#6B3323"/>
+
+<!-- Eyes -->
+<circle cx="28" cy="17" r="2" fill="#FFFFFF"/>
+<circle cx="40" cy="17" r="2" fill="#FFFFFF"/>
+<circle cx="28" cy="17" r="1" fill="#000000"/>
+<circle cx="40" cy="17" r="1" fill="#000000"/>
+
+<!-- Mouth -->
+<path d="M30 24 Q34 27 38 24" stroke="#FFFFFF" stroke-width="1.5" fill="none"/>
+
+<!-- Arms -->
+<ellipse cx="15" cy="25" rx="4" ry="8" fill="#6B3323"/>
+<ellipse cx="53" cy="25" rx="4" ry="8" fill="#6B3323"/>
+
+<!-- Cinema decoration -->
+<rect x="25" y="35" width="18" height="8" rx="2" fill="#D52109"/>
+<text x="34" y="41" font-family="sans-serif" font-size="6" fill="#FFFFFF" text-anchor="middle">映画</text>
+</svg>

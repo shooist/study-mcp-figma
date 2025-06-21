@@ -1,0 +1,56 @@
+<svg width="340" height="400" viewBox="0 0 340 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Background -->
+<rect width="340" height="400" fill="#FFFFFF"/>
+
+<!-- Header -->
+<rect x="10" y="10" width="320" height="40" rx="8" fill="#F8F9FA"/>
+<text x="20" y="35" font-family="sans-serif" font-size="16" font-weight="bold" fill="#111827">Posts from @CineMalice2024</text>
+
+<!-- First Post -->
+<rect x="10" y="60" width="320" height="140" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+<!-- Profile icon -->
+<circle cx="30" cy="80" r="12" fill="#6B3323"/>
+<text x="50" y="85" font-family="sans-serif" font-size="12" font-weight="bold" fill="#111827">シネマリス</text>
+<text x="50" y="95" font-family="sans-serif" font-size="10" fill="#6B7280">@CineMalice2024 · May 6</text>
+
+<!-- Post content -->
+<text x="20" y="115" font-family="sans-serif" font-size="12" fill="#111827">シネマリスより重要なお知らせ</text>
+<text x="20" y="135" font-family="sans-serif" font-size="11" fill="#374151">これまで「2025年春」開業を掲げて参りまし</text>
+<text x="20" y="150" font-family="sans-serif" font-size="11" fill="#374151">たが、諸運の理由により開業が遅れ、夏の</text>
+<text x="20" y="165" font-family="sans-serif" font-size="11" fill="#374151">開業を目指すこととなりました。</text>
+
+<!-- Interaction icons -->
+<circle cx="25" cy="185" r="3" fill="#6B7280"/>
+<text x="35" y="188" font-family="sans-serif" font-size="10" fill="#6B7280">10</text>
+<path d="M55 182 L60 187 L55 192" stroke="#6B7280" stroke-width="1" fill="none"/>
+<text x="65" y="188" font-family="sans-serif" font-size="10" fill="#6B7280">1K</text>
+
+<!-- X logo -->
+<rect x="290" y="75" width="20" height="20" rx="10" fill="#000000"/>
+<text x="300" y="88" font-family="sans-serif" font-size="12" fill="#FFFFFF" text-anchor="middle">X</text>
+
+<!-- Second Post -->
+<rect x="10" y="220" width="320" height="140" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+<!-- Profile icon -->
+<circle cx="30" cy="240" r="12" fill="#6B3323"/>
+<text x="50" y="245" font-family="sans-serif" font-size="12" font-weight="bold" fill="#111827">シネマリス</text>
+<text x="50" y="255" font-family="sans-serif" font-size="10" fill="#6B7280">@CineMalice2024 · Apr 28</text>
+
+<!-- Post content -->
+<text x="20" y="275" font-family="sans-serif" font-size="12" fill="#0EA5E9">#散歩の達人</text>
+<text x="80" y="275" font-family="sans-serif" font-size="12" fill="#111827">5月号は</text>
+<text x="20" y="290" font-family="sans-serif" font-size="11" fill="#374151">特集に</text>
+<text x="50" y="290" font-family="sans-serif" font-size="11" fill="#0EA5E9">#新幹線大増発</text>
+<text x="120" y="290" font-family="sans-serif" font-size="11" fill="#374151">記念企画の樋口真</text>
+<text x="20" y="305" font-family="sans-serif" font-size="11" fill="#374151">嗣監督★草彅剛 対談付きです</text>
+<circle cx="205" cy="305" r="8" fill="#F59E0B"/>
+
+<!-- X logo -->
+<rect x="290" y="235" width="20" height="20" rx="10" fill="#000000"/>
+<text x="300" y="248" font-family="sans-serif" font-size="12" fill="#FFFFFF" text-anchor="middle">X</text>
+
+<!-- Orange banner at bottom -->
+<rect x="10" y="370" width="320" height="20" rx="4" fill="#F97316"/>
+</svg>

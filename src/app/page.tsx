@@ -1,18 +1,18 @@
-const imgCinemaliceTheater1Red0303X1 = "https://images.unsplash.com/photo-1489599856072-59c8d1e6de68?w=320&h=186&fit=crop&crop=center";
-const img202505072023381 = "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=340&h=400&fit=crop&crop=center";
-const img011 = "https://images.unsplash.com/photo-1620121692029-d088224ddc74?w=68&h=48&fit=crop&crop=center";
-const imgIconColorL = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMSA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDMgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K";
-const imgIconColorR = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYgMTJMNi43IDExLjNMMTAuNCA4TDYuNyA0LjdMNiA0TDEwIDhMNiAxMloiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=";
-const imgKanaLogo = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEyIiBoZWlnaHQ9IjM5IiB2aWV3Qm94PSIwIDAgMjEyIDM5IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8dGV4dCB4PSIwIiB5PSIzMCIgZm9udC1mYW1pbHk9IlplbiBLYWt1IEdvdGhpYyBOZXciIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiNENTIxMDkiPuOCt+ODjeODnuODquOCuTwvdGV4dD4KPC9zdmc+Cg==";
-const img1 = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTcwIiBoZWlnaHQ9IjQ2IiB2aWV3Qm94PSIwIDAgNTcwIDQ2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8dGV4dCB4PSIyODUiIHk9IjMwIiBmb250LWZhbWlseT0iWmVuIEtha3UgR290aGljIE5ldyIgZm9udC1zaXplPSIzMiIgZmlsbD0iI0Q1MjEwOSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Q0lORU1BTElDRTwvdGV4dD4KPC9zdmc+Cg==";
-const imgText = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyMCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDJMMTEgN0wxNiA4TDExIDE3TDEwIDIyTDkgMTdMNCA4TDkgN0wxMCAyWiIgZmlsbD0iIzZCMzMyMyIvPgo8L3N2Zz4K";
-const imgText1 = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyMCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDJMMTEgN0wxNiA4TDExIDE3TDEwIDIyTDkgMTdMNCA4TDkgN0wxMCAyWiIgZmlsbD0iIzZCMzMyMyIvPgo8L3N2Zz4K";
-const img = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwIDRINEMyLjkgNCAyIDQuOSAyIDZWMThDMiAxOS4xIDIuOSAyMCA0IDIwSDE2TDIwIDE2VjZDMjAgNC45IDE5LjEgNCAyMCA0WiIgZmlsbD0iIzZCMzMyMyIvPgo8L3N2Zz4K";
-const img2 = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSIjNkIzMzIzIi8+Cjwvc3ZnPgo=";
-const imgVector = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU4IiBoZWlnaHQ9IjciIHZpZXdCb3g9IjAgMCAyNTggNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGxpbmUgeDE9IjAiIHkxPSIzLjUiIHgyPSIyNTgiIHkyPSIzLjUiIHN0cm9rZT0iIzZCMzMyMyIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjwvc3ZnPgo=";
-const img3 = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTYiIGZpbGw9IiMxZGE1ZjIiLz4KPHRleHQgeD0iMTYiIHk9IjIwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkY8L3RleHQ+Cjwvc3ZnPgo=";
-const img4 = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTYiIGZpbGw9IiNlNDE0NGMiLz4KPHRleHQgeD0iMTYiIHk9IjIwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkk8L3RleHQ+Cjwvc3ZnPgo=";
-const img5 = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTYiIGZpbGw9IiMwZjE0MTkiLz4KPHRleHQgeD0iMTYiIHk9IjIwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlg8L3RleHQ+Cjwvc3ZnPgo=";
+const imgCinemaliceTheater1Red0303X1 = "/img/image01.png";
+const img202505072023381 = "/img/sns-posts-figma.svg";
+const img011 = "/img/character-mascot-figma.svg";
+const imgIconColorL = "/img/icon-left.svg";
+const imgIconColorR = "/img/icon-right.svg";
+const imgKanaLogo = "/img/kana-logo-figma.svg";
+const img1 = "/img/main-logo-figma.svg";
+const imgText = "/img/text-icon.svg";
+const imgText1 = "/img/text-icon.svg";
+const img = "/img/mail-icon.svg";
+const img2 = "/img/mail-icon.svg";
+const imgVector = "/img/underline.svg";
+const img3 = "/img/sns-facebook.svg";
+const img4 = "/img/sns-instagram.svg";
+const img5 = "/img/sns-x.svg";
 
 interface ButtonProps {
   text?: string;
@@ -74,7 +74,7 @@ function Button({
 export default function Home() {
   return (
     <div
-      className="bg-light-green-100 relative w-full h-full"
+      className="bg-light-green-100 relative w-full min-h-screen"
       data-name="phese1-teaser-pat2"
       id="node-515_9021"
     >
@@ -106,7 +106,7 @@ export default function Home() {
                                       className="relative shrink-0 text-[22px]"
                                       id="node-515_9029"
                                     >
-                                      <p className="adjustLetterSpacing block leading-[normal] whitespace-nowrap whitespace-pre">
+                                      <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">
                                         神保町
                                       </p>
                                     </div>
@@ -114,7 +114,7 @@ export default function Home() {
                                       className="relative shrink-0 text-[18px]"
                                       id="node-515_9030"
                                     >
-                                      <p className="adjustLetterSpacing block leading-[normal] whitespace-nowrap whitespace-pre">
+                                      <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">
                                         ・
                                       </p>
                                     </div>
@@ -122,7 +122,7 @@ export default function Home() {
                                       className="relative shrink-0 text-[22px]"
                                       id="node-515_9031"
                                     >
-                                      <p className="adjustLetterSpacing block leading-[normal] whitespace-nowrap whitespace-pre">
+                                      <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">
                                         お茶の水
                                       </p>
                                     </div>

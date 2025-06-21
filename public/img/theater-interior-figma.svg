@@ -1,0 +1,82 @@
+<svg width="320" height="186" viewBox="0 0 320 186" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Background -->
+<rect width="320" height="186" fill="#F8F9FA"/>
+
+<!-- Theater screen -->
+<rect x="10" y="20" width="300" height="60" rx="4" fill="#E5E5E5" stroke="#D1D5DB"/>
+
+<!-- Seating rows -->
+<g>
+<!-- Front row -->
+<g transform="translate(40, 90)">
+<rect x="0" y="0" width="12" height="15" rx="6" fill="#EF4444"/>
+<rect x="15" y="0" width="12" height="15" rx="6" fill="#EF4444"/>
+<rect x="30" y="0" width="12" height="15" rx="6" fill="#EF4444"/>
+<rect x="45" y="0" width="12" height="15" rx="6" fill="#EF4444"/>
+<rect x="60" y="0" width="12" height="15" rx="6" fill="#EF4444"/>
+<rect x="75" y="0" width="12" height="15" rx="6" fill="#EF4444"/>
+<rect x="90" y="0" width="12" height="15" rx="6" fill="#EF4444"/>
+<rect x="105" y="0" width="12" height="15" rx="6" fill="#EF4444"/>
+<rect x="120" y="0" width="12" height="15" rx="6" fill="#EF4444"/>
+<rect x="135" y="0" width="12" height="15" rx="6" fill="#EF4444"/>
+<rect x="150" y="0" width="12" height="15" rx="6" fill="#EF4444"/>
+<rect x="165" y="0" width="12" height="15" rx="6" fill="#EF4444"/>
+<rect x="180" y="0" width="12" height="15" rx="6" fill="#EF4444"/>
+<rect x="195" y="0" width="12" height="15" rx="6" fill="#EF4444"/>
+<rect x="210" y="0" width="12" height="15" rx="6" fill="#EF4444"/>
+<rect x="225" y="0" width="12" height="15" rx="6" fill="#EF4444"/>
+</g>
+
+<!-- Middle row -->
+<g transform="translate(30, 110)">
+<rect x="0" y="0" width="12" height="15" rx="6" fill="#DC2626"/>
+<rect x="15" y="0" width="12" height="15" rx="6" fill="#DC2626"/>
+<rect x="30" y="0" width="12" height="15" rx="6" fill="#DC2626"/>
+<rect x="45" y="0" width="12" height="15" rx="6" fill="#DC2626"/>
+<rect x="60" y="0" width="12" height="15" rx="6" fill="#DC2626"/>
+<rect x="75" y="0" width="12" height="15" rx="6" fill="#DC2626"/>
+<rect x="90" y="0" width="12" height="15" rx="6" fill="#DC2626"/>
+<rect x="105" y="0" width="12" height="15" rx="6" fill="#DC2626"/>
+<rect x="120" y="0" width="12" height="15" rx="6" fill="#DC2626"/>
+<rect x="135" y="0" width="12" height="15" rx="6" fill="#DC2626"/>
+<rect x="150" y="0" width="12" height="15" rx="6" fill="#DC2626"/>
+<rect x="165" y="0" width="12" height="15" rx="6" fill="#DC2626"/>
+<rect x="180" y="0" width="12" height="15" rx="6" fill="#DC2626"/>
+<rect x="195" y="0" width="12" height="15" rx="6" fill="#DC2626"/>
+<rect x="210" y="0" width="12" height="15" rx="6" fill="#DC2626"/>
+<rect x="225" y="0" width="12" height="15" rx="6" fill="#DC2626"/>
+<rect x="240" y="0" width="12" height="15" rx="6" fill="#DC2626"/>
+<rect x="255" y="0" width="12" height="15" rx="6" fill="#DC2626"/>
+</g>
+
+<!-- Back row -->
+<g transform="translate(20, 130)">
+<rect x="0" y="0" width="12" height="15" rx="6" fill="#B91C1C"/>
+<rect x="15" y="0" width="12" height="15" rx="6" fill="#B91C1C"/>
+<rect x="30" y="0" width="12" height="15" rx="6" fill="#B91C1C"/>
+<rect x="45" y="0" width="12" height="15" rx="6" fill="#B91C1C"/>
+<rect x="60" y="0" width="12" height="15" rx="6" fill="#B91C1C"/>
+<rect x="75" y="0" width="12" height="15" rx="6" fill="#B91C1C"/>
+<rect x="90" y="0" width="12" height="15" rx="6" fill="#B91C1C"/>
+<rect x="105" y="0" width="12" height="15" rx="6" fill="#B91C1C"/>
+<rect x="120" y="0" width="12" height="15" rx="6" fill="#B91C1C"/>
+<rect x="135" y="0" width="12" height="15" rx="6" fill="#B91C1C"/>
+<rect x="150" y="0" width="12" height="15" rx="6" fill="#B91C1C"/>
+<rect x="165" y="0" width="12" height="15" rx="6" fill="#B91C1C"/>
+<rect x="180" y="0" width="12" height="15" rx="6" fill="#B91C1C"/>
+<rect x="195" y="0" width="12" height="15" rx="6" fill="#B91C1C"/>
+<rect x="210" y="0" width="12" height="15" rx="6" fill="#B91C1C"/>
+<rect x="225" y="0" width="12" height="15" rx="6" fill="#B91C1C"/>
+<rect x="240" y="0" width="12" height="15" rx="6" fill="#B91C1C"/>
+<rect x="255" y="0" width="12" height="15" rx="6" fill="#B91C1C"/>
+<rect x="270" y="0" width="12" height="15" rx="6" fill="#B91C1C"/>
+</g>
+</g>
+
+<!-- Side walls -->
+<polygon points="0,80 10,90 10,186 0,186" fill="#FCA5A5"/>
+<polygon points="320,80 310,90 310,186 320,186" fill="#FCA5A5"/>
+
+<!-- Floor -->
+<polygon points="10,150 310,150 320,186 0,186" fill="#FEE2E2"/>
+</svg>
