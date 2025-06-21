@@ -1,19 +1,642 @@
-export default function Home() {
+const imgCinemaliceTheater1Red0303X1 = "https://images.unsplash.com/photo-1489599856072-59c8d1e6de68?w=320&h=186&fit=crop&crop=center";
+const img202505072023381 = "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=340&h=400&fit=crop&crop=center";
+const img011 = "https://images.unsplash.com/photo-1620121692029-d088224ddc74?w=68&h=48&fit=crop&crop=center";
+const imgIconColorL = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMSA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDMgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K";
+const imgIconColorR = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYgMTJMNi43IDExLjNMMTAuNCA4TDYuNyA0LjdMNiA0TDEwIDhMNiAxMloiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=";
+const imgKanaLogo = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEyIiBoZWlnaHQ9IjM5IiB2aWV3Qm94PSIwIDAgMjEyIDM5IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8dGV4dCB4PSIwIiB5PSIzMCIgZm9udC1mYW1pbHk9IlplbiBLYWt1IEdvdGhpYyBOZXciIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiNENTIxMDkiPuOCt+ODjeODnuODquOCuTwvdGV4dD4KPC9zdmc+Cg==";
+const img1 = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTcwIiBoZWlnaHQ9IjQ2IiB2aWV3Qm94PSIwIDAgNTcwIDQ2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8dGV4dCB4PSIyODUiIHk9IjMwIiBmb250LWZhbWlseT0iWmVuIEtha3UgR290aGljIE5ldyIgZm9udC1zaXplPSIzMiIgZmlsbD0iI0Q1MjEwOSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Q0lORU1BTElDRTwvdGV4dD4KPC9zdmc+Cg==";
+const imgText = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyMCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDJMMTEgN0wxNiA4TDExIDE3TDEwIDIyTDkgMTdMNCA4TDkgN0wxMCAyWiIgZmlsbD0iIzZCMzMyMyIvPgo8L3N2Zz4K";
+const imgText1 = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyMCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDJMMTEgN0wxNiA4TDExIDE3TDEwIDIyTDkgMTdMNCA4TDkgN0wxMCAyWiIgZmlsbD0iIzZCMzMyMyIvPgo8L3N2Zz4K";
+const img = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwIDRINEMyLjkgNCAyIDQuOSAyIDZWMThDMiAxOS4xIDIuOSAyMCA0IDIwSDE2TDIwIDE2VjZDMjAgNC45IDE5LjEgNCAyMCA0WiIgZmlsbD0iIzZCMzMyMyIvPgo8L3N2Zz4K";
+const img2 = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSIjNkIzMzIzIi8+Cjwvc3ZnPgo=";
+const imgVector = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU4IiBoZWlnaHQ9IjciIHZpZXdCb3g9IjAgMCAyNTggNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGxpbmUgeDE9IjAiIHkxPSIzLjUiIHgyPSIyNTgiIHkyPSIzLjUiIHN0cm9rZT0iIzZCMzMyMyIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjwvc3ZnPgo=";
+const img3 = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTYiIGZpbGw9IiMxZGE1ZjIiLz4KPHRleHQgeD0iMTYiIHk9IjIwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkY8L3RleHQ+Cjwvc3ZnPgo=";
+const img4 = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTYiIGZpbGw9IiNlNDE0NGMiLz4KPHRleHQgeD0iMTYiIHk9IjIwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkk8L3RleHQ+Cjwvc3ZnPgo=";
+const img5 = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTYiIGZpbGw9IiMwZjE0MTkiLz4KPHRleHQgeD0iMTYiIHk9IjIwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlg8L3RleHQ+Cjwvc3ZnPgo=";
+
+interface ButtonProps {
+  text?: string;
+  showIconColorL?: boolean;
+  showIconColorR?: boolean;
+}
+
+function Button({
+  text = "ボタンテキスト",
+  showIconColorL = true,
+  showIconColorR = true,
+}: ButtonProps) {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm">
-        <h1 className="text-4xl font-bold text-center mb-8">
-          映画館へようこそ
-        </h1>
-        <p className="text-center text-lg mb-4">
-          Next.js + Tailwind CSS のセットアップが完了しました！
-        </p>
-        <div className="bg-blue-100 p-4 rounded-lg text-center">
-          <p className="text-blue-800">
-            映画館のホームページ開発を開始できます
-          </p>
+    <div
+      className="relative rounded-[48px] w-full h-full"
+      data-name="type=primary-fill,state=default"
+      id="node-128_7606"
+    >
+      <div className="flex flex-row items-center justify-center max-w-inherit relative w-full h-full">
+        <div className="box-border content-stretch flex flex-row gap-2 items-center justify-center max-w-inherit px-8 py-2 relative w-full h-full">
+          {showIconColorL && (
+            <div
+              className="relative shrink-0 w-6 h-6"
+              data-name="icon-color-L"
+              id="node-128_7607"
+            >
+              <img
+                alt=""
+                className="block max-w-none w-full h-full"
+                src={imgIconColorL}
+              />
+            </div>
+          )}
+          <div
+            className="basis-0 font-zen-kaku-gothic-new font-bold grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#ffffff] text-[16px] text-left"
+            id="node-128_7608"
+          >
+            <p className="block leading-[1.8]">{text}</p>
+          </div>
+          {showIconColorR && (
+            <div
+              className="relative shrink-0 w-4 h-4"
+              data-name="icon-color-R"
+              id="node-128_7609"
+            >
+              <img
+                alt=""
+                className="block max-w-none w-full h-full"
+                src={imgIconColorR}
+              />
+            </div>
+          )}
         </div>
       </div>
-    </main>
-  )
+    </div>
+  );
+}
+
+export default function Home() {
+  return (
+    <div
+      className="bg-light-green-100 relative w-full h-full"
+      data-name="phese1-teaser-pat2"
+      id="node-515_9021"
+    >
+      <div
+        className="absolute left-1/2 top-0 transform -translate-x-1/2 w-[1280px]"
+        id="node-515_9022"
+      >
+        <div className="box-border content-stretch flex flex-col items-start justify-start p-0 relative w-[1280px]">
+          <div className="relative shrink-0 w-full" id="node-515_9023">
+            <div className="box-border content-stretch flex flex-col gap-14 items-center justify-start p-0 relative w-full">
+              <div className="relative shrink-0 w-full" id="node-515_9024">
+                <div className="box-border content-stretch flex flex-col items-center justify-start p-0 relative w-full">
+                  <div className="relative shrink-0 w-full" id="node-515_9025">
+                    <div className="flex flex-col items-center relative w-full h-full">
+                      <div className="box-border content-stretch flex flex-col gap-14 items-center justify-start px-[120px] py-20 relative w-full">
+                        <div className="relative shrink-0" id="node-515_9026">
+                          <div className="box-border content-stretch flex flex-col gap-2 items-center justify-start p-0 relative">
+                            <div
+                              className="relative shrink-0"
+                              id="node-515_9027"
+                            >
+                              <div className="box-border content-stretch flex flex-row gap-0.5 items-end justify-start p-0 relative">
+                                <div
+                                  className="relative shrink-0"
+                                  id="node-515_9028"
+                                >
+                                  <div className="box-border content-stretch flex flex-row font-zen-kaku-gothic-antique font-bold items-center justify-start leading-[0] not-italic p-0 relative text-[#000000] text-center whitespace-nowrap tracking-[2px]">
+                                    <div
+                                      className="relative shrink-0 text-[22px]"
+                                      id="node-515_9029"
+                                    >
+                                      <p className="adjustLetterSpacing block leading-[normal] whitespace-nowrap whitespace-pre">
+                                        神保町
+                                      </p>
+                                    </div>
+                                    <div
+                                      className="relative shrink-0 text-[18px]"
+                                      id="node-515_9030"
+                                    >
+                                      <p className="adjustLetterSpacing block leading-[normal] whitespace-nowrap whitespace-pre">
+                                        ・
+                                      </p>
+                                    </div>
+                                    <div
+                                      className="relative shrink-0 text-[22px]"
+                                      id="node-515_9031"
+                                    >
+                                      <p className="adjustLetterSpacing block leading-[normal] whitespace-nowrap whitespace-pre">
+                                        お茶の水
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  className="font-zen-kaku-gothic-new font-bold leading-[0] not-italic relative shrink-0 text-[#000000] text-[16px] text-center whitespace-nowrap tracking-[2px]"
+                                  id="node-515_9032"
+                                >
+                                  <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">
+                                    エリアに
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              className="relative shrink-0"
+                              id="node-515_9033"
+                            >
+                              <div className="box-border content-stretch flex flex-row gap-4 items-start justify-center p-0 relative">
+                                <div
+                                  className="font-zen-kaku-gothic-new font-bold h-12 leading-[0] not-italic relative shrink-0 text-[#000000] text-[32px] text-center tracking-[2px] w-[406px]"
+                                  id="node-515_9034"
+                                >
+                                  <p className="adjustLetterSpacing block leading-[1.5]">
+                                    新たな映画館が誕生します
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="relative shrink-0" id="node-515_9035">
+                          <div className="box-border content-stretch flex flex-col gap-6 items-center justify-center p-0 relative">
+                            <div
+                              className="h-[39px] overflow-hidden relative shrink-0 w-[212px]"
+                              data-name="kana-logo"
+                              id="node-515_9036"
+                            >
+                              <img
+                                alt=""
+                                className="block max-w-none w-full h-full"
+                                src={imgKanaLogo}
+                              />
+                            </div>
+                            <div
+                              className="h-[46px] overflow-hidden relative shrink-0 w-[570px]"
+                              data-name="logo"
+                              id="node-515_9039"
+                            >
+                              <div
+                                className="absolute bottom-0 left-0 right-[-0.006%] top-[-0.012%]"
+                                data-name="レイヤー 1"
+                                id="node-515_9040"
+                              >
+                                <img
+                                  alt=""
+                                  className="block max-w-none w-full h-full"
+                                  src={img1}
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="relative shrink-0" id="node-515_9042">
+                          <div className="box-border content-stretch flex flex-row gap-4 items-center justify-start p-0 relative">
+                            <div
+                              className="bg-beige-900 h-px shrink-0 w-[100px]"
+                              id="node-515_9043"
+                            />
+                            <div
+                              className="font-zen-kaku-gothic-new font-bold leading-[0] not-italic relative shrink-0 text-beige-900 text-[20px] text-center whitespace-nowrap tracking-[2px]"
+                              id="node-515_9044"
+                            >
+                              <p className="adjustLetterSpacing block leading-[1.5] whitespace-pre">
+                                小さくても善いものを
+                              </p>
+                            </div>
+                            <div
+                              className="bg-beige-900 h-px shrink-0 w-[100px]"
+                              id="node-515_9045"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="bg-[#ffffff] relative rounded-[20px] shrink-0"
+                    id="node-515_9046"
+                  >
+                    <div className="absolute border-4 border-red-600 border-solid inset-0 pointer-events-none rounded-[20px]" />
+                    <div className="flex flex-col items-center relative w-full h-full">
+                      <div className="box-border content-stretch flex flex-col gap-10 items-center justify-start p-[80px] relative">
+                        <div
+                          className="relative shrink-0 w-[550px]"
+                          id="node-515_9047"
+                        >
+                          <div className="box-border content-stretch flex flex-col gap-10 items-center justify-start p-0 relative w-[550px]">
+                            <div
+                              className="relative shrink-0 w-full"
+                              id="node-515_9048"
+                            >
+                              <div className="box-border content-stretch flex flex-col gap-4 items-center justify-start p-0 relative w-full">
+                                <div
+                                  className="relative shrink-0 w-full"
+                                  id="node-515_9049"
+                                >
+                                  <div className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative w-full">
+                                    <div
+                                      className="relative shrink-0"
+                                      id="node-515_9050"
+                                    >
+                                      <div className="box-border content-stretch flex flex-col gap-1 items-center justify-start p-0 relative">
+                                        <div
+                                          className="relative shrink-0"
+                                          data-name="title"
+                                          id="node-515_9051"
+                                        >
+                                          <div className="box-border content-stretch flex flex-row gap-4 items-center justify-start p-0 relative">
+                                            <div
+                                              className="h-6 relative shrink-0 w-5"
+                                              data-name="text"
+                                              id="node-515_9052"
+                                            >
+                                              <img
+                                                alt=""
+                                                className="block max-w-none w-full h-full"
+                                                src={imgText}
+                                              />
+                                            </div>
+                                            <div
+                                              className="font-zen-kaku-gothic-new font-bold leading-[0] not-italic relative shrink-0 text-beige-900 text-[20px] text-left whitespace-nowrap tracking-[2px]"
+                                              id="node-515_9055"
+                                            >
+                                              <p className="adjustLetterSpacing block leading-[1.5] whitespace-pre">
+                                                クラウドファンディングを実施します
+                                              </p>
+                                            </div>
+                                            <div className="flex items-center justify-center relative shrink-0">
+                                              <div className="flex-none transform rotate-180 scale-y-[-1]">
+                                                <div
+                                                  className="h-6 relative w-5"
+                                                  data-name="text"
+                                                  id="node-515_9056"
+                                                >
+                                                  <img
+                                                    alt=""
+                                                    className="block max-w-none w-full h-full"
+                                                    src={imgText1}
+                                                  />
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  className="bg-center bg-cover bg-no-repeat h-[186px] shrink-0 w-80"
+                                  data-name="Cinemalice_Theater-1_Red+@0.3@0.3x 1"
+                                  id="node-515_9060"
+                                  style={{
+                                    backgroundImage: `url('${imgCinemaliceTheater1Red0303X1}')`,
+                                  }}
+                                />
+                                <div
+                                  className="css-ymfocn font-zen-kaku-gothic-new font-medium leading-[1.8] min-w-full not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-beige-900 text-[16px] text-center tracking-[2px]"
+                                  id="node-515_9061"
+                                  style={{ width: "min-content" }}
+                                >
+                                  <p className="block mb-0">
+                                    開業に向けたクラウドファンディングを開始します。
+                                  </p>
+                                  <p className="block">
+                                    支援についてはクラウドファンディングのページでご覧ください。
+                                  </p>
+                                </div>
+                                <div
+                                  className="bg-red-button max-w-[290px] relative rounded-[48px] shrink-0"
+                                  data-name="button"
+                                  id="node-515_9062"
+                                >
+                                  <Button text="クラウドファンディングのプロジェクトを見る" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="bg-light-green-100 relative shrink-0 w-full"
+                data-name="news"
+                id="node-515_9063"
+              >
+                <div className="box-border content-stretch flex flex-col gap-6 items-center justify-start p-0 relative w-full">
+                  <div className="relative shrink-0 w-full" id="node-515_9067">
+                    <div className="box-border content-stretch flex flex-col gap-6 items-center justify-start p-0 relative w-full">
+                      <div
+                        className="relative shrink-0 w-full"
+                        data-name="title"
+                        id="node-515_9068"
+                      >
+                        <div className="flex flex-col items-center justify-center relative w-full h-full">
+                          <div className="box-border content-stretch flex flex-col items-center justify-center px-20 py-0 relative w-full">
+                            <div
+                              className="font-zen-kaku-gothic-new font-bold leading-[0] not-italic relative shrink-0 text-[#000000] text-[24px] text-center whitespace-nowrap tracking-[2px]"
+                              id="node-515_9069"
+                            >
+                              <p className="adjustLetterSpacing block leading-[1.5] whitespace-pre">
+                                スタッフ募集のお知らせ
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="relative shrink-0 w-[710px]"
+                        data-name="news-list"
+                        id="node-515_9070"
+                      >
+                        <div className="box-border content-stretch flex flex-col gap-4 items-start justify-start p-0 relative w-[710px]">
+                          <div
+                            className="bg-[#ffffff] relative rounded-[20px] shrink-0 w-full"
+                            data-name="news-item/PC"
+                            id="node-515_9071"
+                          >
+                            <div className="relative w-full h-full">
+                              <div className="box-border content-stretch flex flex-row gap-4 items-start justify-start p-[16px] relative w-full">
+                                <div
+                                  className="basis-0 grow min-h-px min-w-px relative shrink-0"
+                                  id="node-515_9082"
+                                >
+                                  <div className="box-border content-stretch flex flex-col gap-6 items-start justify-start p-0 relative w-full">
+                                    <div
+                                      className="relative shrink-0 w-full"
+                                      id="node-515_9083"
+                                    >
+                                      <div className="box-border content-stretch flex flex-col gap-1 items-start justify-start p-0 relative w-full">
+                                        <div
+                                          className="css-ymfocn font-zen-kaku-gothic-new font-bold leading-[0] not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-beige-900 text-[16px] text-left tracking-[2px] w-full"
+                                          id="node-515_9084"
+                                        >
+                                          <p className="block leading-[1.8]">
+                                            シネマリスではスタッフを募集します。のようなお知らせのタイトル。
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div
+                                      className="relative shrink-0 w-full"
+                                      id="node-515_9085"
+                                    >
+                                      <div className="box-border content-stretch flex flex-col gap-10 items-start justify-start p-0 relative w-full">
+                                        <div
+                                          className="font-zen-kaku-gothic-new font-medium leading-[0] min-w-full not-italic relative shrink-0 text-beige-900 text-[16px] text-left tracking-[2px]"
+                                          id="node-515_9086"
+                                          style={{ width: "min-content" }}
+                                        >
+                                          <p className="block leading-[1.8]">
+                                            運営スタッフの募集をします。
+                                            <br className="" />
+                                            などの文章が入ります。文章が入ります。文章が入ります文章が入ります文章が入ります文章が入ります。
+                                          </p>
+                                        </div>
+                                        <div
+                                          className="relative shrink-0"
+                                          id="node-515_9087"
+                                        >
+                                          <div className="box-border content-stretch flex flex-col gap-4 items-start justify-start p-0 relative">
+                                            <div
+                                              className="relative shrink-0"
+                                              id="node-515_9088"
+                                            >
+                                              <div className="box-border content-stretch flex flex-col gap-2 items-start justify-start leading-[0] not-italic p-0 relative text-beige-900 text-left tracking-[2px]">
+                                                <div
+                                                  className="font-zen-kaku-gothic-new font-bold h-[29px] relative shrink-0 text-[16px] w-[678px]"
+                                                  id="node-515_9089"
+                                                >
+                                                  <p className="adjustLetterSpacing block leading-[1.8]">
+                                                    業務内容
+                                                  </p>
+                                                </div>
+                                                <div
+                                                  className="font-zen-kaku-gothic-new font-medium relative shrink-0 text-[14px] whitespace-nowrap"
+                                                  id="node-515_9090"
+                                                >
+                                                  <p className="adjustLetterSpacing block leading-[1.8] whitespace-pre">
+                                                    業務内容についての文章
+                                                  </p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div
+                                              className="relative shrink-0 w-full"
+                                              id="node-515_9091"
+                                            >
+                                              <div className="box-border content-stretch flex flex-col gap-2 items-start justify-start leading-[0] not-italic p-0 relative text-beige-900 text-left tracking-[2px] w-full">
+                                                <div
+                                                  className="font-zen-kaku-gothic-new font-bold h-[29px] relative shrink-0 text-[16px] w-[678px]"
+                                                  id="node-515_9092"
+                                                >
+                                                  <p className="adjustLetterSpacing block leading-[1.8]">
+                                                    勤務場所や給与形態など
+                                                  </p>
+                                                </div>
+                                                <div
+                                                  className="font-zen-kaku-gothic-new font-medium leading-[1.8] min-w-full relative shrink-0 text-[14px]"
+                                                  id="node-515_9093"
+                                                  style={{
+                                                    width: "min-content",
+                                                  }}
+                                                >
+                                                  <p className="block mb-0">
+                                                    スタッフ募集についての文章が入ります。スタッフ募集についての文章が入ります。スタッフ募集についての文章が入ります。
+                                                  </p>
+                                                  <p className="block">
+                                                    スタッフ募集についての文章が入ります。スタッフ募集についての文章が入ります。スタッフ募集についての文章が入ります。スタッフ募集についての文章が入ります。スタッフ募集についての文章が入ります。スタッフ募集についての文章が入ります。
+                                                  </p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="relative shrink-0" id="node-515_9095">
+                <div className="box-border content-stretch flex flex-col gap-4 items-center justify-start p-0 relative">
+                  <div
+                    className="font-zen-kaku-gothic-new font-bold leading-[1.5] min-w-full not-italic relative shrink-0 text-[#000000] text-[18px] text-center tracking-[2px]"
+                    id="node-515_9096"
+                    style={{ width: "min-content" }}
+                  >
+                    <p className="block mb-0">最新情報はこちらから</p>
+                    <p className="block">ご確認ください</p>
+                  </div>
+                  <div
+                    className="bg-[length:104.71%_103.5%] bg-[43.75%_35.71%] bg-no-repeat h-[400px] shrink-0 w-[340px]"
+                    data-name="スクリーンショット 2025-05-07 20.23.38 1"
+                    id="node-515_9097"
+                    style={{ backgroundImage: `url('${img202505072023381}')` }}
+                  />
+                </div>
+              </div>
+              <div className="relative shrink-0" id="node-515_9099">
+                <div className="box-border content-stretch flex flex-col gap-10 items-center justify-start p-0 relative">
+                  <div className="relative shrink-0" id="node-515_9100">
+                    <div className="box-border content-stretch flex flex-row gap-1 items-end justify-start p-0 relative">
+                      <div
+                        className="bg-center bg-cover bg-no-repeat h-12 shrink-0 w-[68px]"
+                        data-name="01_キャラクターイラスト(大) 1"
+                        id="node-515_9101"
+                        style={{ backgroundImage: `url('${img011}')` }}
+                      />
+                      <div className="relative shrink-0" id="node-515_9102">
+                        <div className="box-border content-stretch flex flex-col gap-1 items-start justify-start p-0 relative">
+                          <div className="relative shrink-0" id="node-515_9103">
+                            <div className="flex flex-row items-center relative w-full h-full">
+                              <div className="box-border content-stretch flex flex-row gap-2 items-center justify-start pl-4 pr-0 py-0 relative">
+                                <div
+                                  className="relative shrink-0 w-6 h-6"
+                                  data-name="mail"
+                                  id="node-515_9104"
+                                >
+                                  <div
+                                    className="absolute bottom-[17.778%] left-[8.756%] mask-intersect mask-no-clip mask-no-repeat mask-position-[-2.50003px_-4.5px] mask-size-[24px_24px] right-[12.078%] top-[19.722%]"
+                                    data-name="mail"
+                                    id="node-I515_9104-3_352"
+                                    style={{ maskImage: `url('${img}')` }}
+                                  >
+                                    <img
+                                      alt=""
+                                      className="block max-w-none w-full h-full"
+                                      loading="lazy"
+                                      src={img2}
+                                    />
+                                  </div>
+                                </div>
+                                <div
+                                  className="font-zen-kaku-gothic-new font-medium leading-[0] not-italic relative shrink-0 text-beige-900 text-[16px] text-left whitespace-nowrap tracking-[2px]"
+                                  id="node-515_9105"
+                                >
+                                  <p className="adjustLetterSpacing block leading-[1.8] whitespace-pre">
+                                    メールでのお問い合わせ
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            className="h-[7px] relative shrink-0 w-[258px]"
+                            data-name="Vector"
+                            id="node-515_9106"
+                          >
+                            <div className="absolute bottom-[-7.143%] left-[-0.016%] right-[-0.014%] top-[-7.142%]">
+                              <img
+                                alt=""
+                                className="block max-w-none w-full h-full"
+                                loading="lazy"
+                                src={imgVector}
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="relative shrink-0" id="node-515_9107">
+                    <div className="box-border content-stretch flex flex-row gap-10 items-center justify-start p-0 relative">
+                      <div
+                        className="overflow-hidden relative shrink-0 w-8 h-8"
+                        data-name="SNS-icon select"
+                        id="node-515_9108"
+                      >
+                        <div
+                          className="absolute left-0 w-10 h-10 top-0"
+                          data-name="Exclude"
+                          id="node-I515_9108-172_30967"
+                        >
+                          <img
+                            alt=""
+                            className="block max-w-none w-full h-full"
+                            loading="lazy"
+                            src={img3}
+                          />
+                        </div>
+                      </div>
+                      <div
+                        className="relative shrink-0 w-8 h-8"
+                        data-name="SNS-icon select"
+                        id="node-515_9109"
+                      >
+                        <div
+                          className="absolute left-0 w-10 h-10 top-0"
+                          data-name="Exclude"
+                          id="node-I515_9109-172_30975"
+                        >
+                          <img
+                            alt=""
+                            className="block max-w-none w-full h-full"
+                            loading="lazy"
+                            src={img4}
+                          />
+                        </div>
+                      </div>
+                      <div
+                        className="overflow-hidden relative rounded-[36px] shrink-0 w-8 h-8"
+                        data-name="SNS-icon select"
+                        id="node-515_9110"
+                      >
+                        <div
+                          className="absolute inset-0 overflow-hidden"
+                          data-name="Logo 2"
+                          id="node-I515_9110-172_30979"
+                        >
+                          <div
+                            className="absolute bottom-0 contents left-0 right-[-0.002%] top-0"
+                            data-name="Logo"
+                            id="node-I515_9110-172_30980"
+                          >
+                            <div
+                              className="absolute bottom-0 left-0 right-[-0.002%] top-0"
+                              data-name="Logo"
+                              id="node-I515_9110-172_30981"
+                            >
+                              <img
+                                alt=""
+                                className="block max-w-none w-full h-full"
+                                loading="lazy"
+                                src={img5}
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="relative shrink-0 w-full" id="node-515_9111">
+                <div className="flex flex-col items-center relative w-full h-full">
+                  <div className="box-border content-stretch flex flex-col gap-10 items-center justify-start px-0 py-10 relative w-full">
+                    <div
+                      className="font-zen-kaku-gothic-new font-medium leading-[0] not-italic relative shrink-0 text-[#000000] text-[12px] text-center whitespace-nowrap tracking-[2px]"
+                      id="node-515_9112"
+                    >
+                      <p className="adjustLetterSpacing block leading-[1.8] whitespace-pre">
+                        ©シネマリス︎
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
