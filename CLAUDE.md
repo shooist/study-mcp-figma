@@ -8,7 +8,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Rule Management
 
-When the user says "以降は" or "今後は" or "これからは" (from now on) followed by a new rule or instruction, automatically add that rule to this CLAUDE.md file so that future Claude Code instances will follow it.
+When the user says "以降は" , "今後は" or "これからは" (from now on) followed by a new rule or instruction, automatically add that rule to this CLAUDE.md file so that future Claude Code instances will follow it.
 
 ## Project Overview
 

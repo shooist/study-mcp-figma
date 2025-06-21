@@ -1,0 +1,41 @@
+{
+  "name": "study-mcp-figma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shooist/study-mcp-figma.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shooist/study-mcp-figma/issues"
+  },
+  "homepage": "https://github.com/shooist/study-mcp-figma#readme",
+  "dependencies": {
+    "next": "^15.3.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "@types/react": "^19.1.8",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.29.0",
+    "eslint-config-next": "^15.3.4",
+    "eslint-config-prettier": "^10.1.5",
+    "postcss": "^8.4.31",
+    "prettier": "^3.5.3",
+    "tailwindcss": "^4.1.10",
+    "typescript": "^5.8.3"
+  }
+}
